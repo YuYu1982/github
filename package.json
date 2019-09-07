@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "gulp clean",
     "build": "gulp build",
-    "postinstall": "gulp build",
+    "postinstall": "npm run build",
     "test": "mocha --opts ./mocha.opts test/*.spec.js",
     "test-coverage": "NODE_ENV=test nyc mocha --opts ./mocha.opts test/*.spec.js",
     "test-verbose": "DEBUG=github* npm test",
